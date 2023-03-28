@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaSnapchatGhost } from "react-icons/fa";
-import { BsPinterest, BsTiktok } from "react-icons/bs";
+import { BsPinterest } from "react-icons/bs";
 import {
   AiOutlineInstagram,
   AiOutlineTwitter,
@@ -43,11 +43,7 @@ export default function Socials() {
               <FaSnapchatGhost></FaSnapchatGhost>
             </a>
           </li>
-          <li>
-            <a href="http://" target="_blank" rel="">
-              <BsTiktok></BsTiktok>
-            </a>
-          </li>
+         
         </ul>
       </section>
     </Box>

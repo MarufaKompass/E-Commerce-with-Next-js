@@ -6,7 +6,7 @@ const nextConfig = {
   scssOptions: {
     includePaths: [
       path.join(__dirname, "styles")],
-      prependDate:`@import "./src/pages/styles/base.scss";`,
+      prependDate:`@import "./src/styles/base.scss";`,
   }
 }
 

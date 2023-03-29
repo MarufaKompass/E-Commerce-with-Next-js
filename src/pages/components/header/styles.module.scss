@@ -1,0 +1,63 @@
+@import "../../../styles//base.scss";
+
+.container{
+    max-width: 1400px;
+    margin: 0  auto;
+}
+
+.header{
+
+    &__container{
+
+    }
+ //.................... top banner ............................//
+    &__topbanner{
+        img{
+            width:100%; 
+        }
+    
+    }
+     //.................... top ............................//
+    &__top{
+        .container{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .topleft{
+            ul{
+                display: flex;
+                align-items: center;
+                height: 46px;
+            }
+            li{
+                font-size:$base-font-size;
+                color: $base-text-color;
+                margin-right: 20px;
+                border-left: 1px solid $border-color;
+                padding-left: 10px;
+                &:hover{
+                    color: $color;
+                }
+            }
+        }
+        .topright{
+            ul{
+                display: flex;
+                align-items: center;
+                height: 46px;
+            }
+            li{
+                font-size:$base-font-size;
+                color: $base-text-color;
+                margin-right: 20px;
+                border-left: 1px solid $border-color;
+                padding-left: 10px;
+                &:hover{
+                    color: $color;
+                }
+            }
+        }
+    }
+   
+}

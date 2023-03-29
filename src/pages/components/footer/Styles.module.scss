@@ -1,7 +1,11 @@
 @import "../../../styles//base.scss";
  //.......................... footer main parts ..............................//
-.footer {
-  background: #f8f8f8;
+.container{
+  max-width: 1400px;
+  margin: 0  auto;
+}
+ .footer {
+  background:$footer-color;
 
   &__container {
     position: relative;
@@ -10,10 +14,7 @@
     gap: 3rem;
     padding: 1rem;
     
-    @media (min-width:1200px) {
-        max-width: 1400px;
-        margin: 0  auto;
-    }
+   
     .flex{
         display: flex;
         justify-content: space-between;
@@ -26,15 +27,27 @@
     
         }
     }
-    .newsContact{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
+   
   }
   .img {
     width: 200px;
     height: 40px;
     object-fit: contain;
+  }
+ //............................ newsletterContact ...............................//
+  &__newsContact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 20px;
+
+    @media (max-width:991px){
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width:560px){
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
  //............................ links ...............................//
   &__links {
@@ -49,12 +62,12 @@
     ul {
       padding: 5px;
       font-size:$heading-font-size;
-      color: $heading-color;
+      color: $white-color;
       li {
         font-size:$base-font-size;
       }
       a {
-        color: $base-text-color;
+        color: $black-text-color;
         line-height: 23px;
         &:hover {
           text-decoration: underline;
@@ -73,12 +86,12 @@
                 font-size: 1.2rem;
                 height: 40px;
                 width: 40px;
-                border: 1px solid $base-text-color;
+                border: 1px solid $white-color;
                 border-radius: 50%;
                 display: grid;
                 justify-content: center;
                 align-items: center;
-                color:$base-text-color;
+                color:$black-text-color;
                 transition: .3s;
                 a{
                     display: grid;
@@ -106,7 +119,7 @@
         }
     section{
         font-size:$base-font-size;
-        color:$base-text-color;
+        color:$black-text-color;
         
     }
   }
@@ -128,11 +141,13 @@
   &__inputField{
     display: flex;
     margin-top: 10px;
+    position: relative;
   }
   &__newsletter{
     h3{
         font-size:$heading-font-size;
-        color: $heading-color;
+        color: $white-color;
+        font-weight: 500;
     }
     input{
         width: 100%;
@@ -141,26 +156,26 @@
         font-size: 14px;
         padding-left: 10px;
         border-radius: 6px;
-        position: relative;
         border-right: none;
-        border: 1px solid $base-text-color;
+        border: 1px solid $white-color;
         &:hover{
           border: 1px solid $color;
         }
        }
     .btn_primary{
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 5px;
         background: $color;
         color: $white-color;
         font-weight: 600;
         cursor: pointer;
         width:100%;
-        border-radius: 6px;
+        border-radius: 3px;
         width: 150px;
         position: absolute;
+        right: 0;
         height: 50px;
         
 }
@@ -176,6 +191,7 @@
     }
     .icon{
       font-size:35px;
+      color: $white-color;
     }
     .callInfo{
       display: grid;
@@ -187,11 +203,11 @@
     }
     p{
       font-size: $base-font-size;
-      color: $base-text-color;
+      color: $white-color;
     }
     span{
       font-size: $base-font-size;
-      color: $base-text-color;
+      color: $black-text-color;
       margin-top: 3px;
       margin-left: 10px;
     }
@@ -204,6 +220,47 @@
    .orderInfo{
     display: flex;
    }
+ }
+   //..........................for signUp.....................................//
+ &__forSignup{
+    .signup{
+    h1{
+     color: $white-color;
+     font-size:$middle-heading-font-size;
+     font-weight: 500;
+    }
+    p{
+      color: $black-text-color;
+      font-size:$base-font-size;
+      margin-top: 5px;
+    }
+  }
+  .button{
+    margin-top: 20px;
+    button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      border: 1px solid $black-text-color;
+      font-weight: 600;
+      cursor: pointer;
+      width:100%;
+      border-radius:3px;
+      width: 160px;
+      height: 50px;
+      color: $black-text-color;
+      transition: 1s;
+    &:hover{
+      background: $color;
+      border: 1px solid $color;
+      color: $white-color;
+    }
+    }
+    .icon{
+       font-size:1.6rem;
+    }
+  }
+ }
 
-   }
 }

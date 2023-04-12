@@ -5,6 +5,12 @@
     margin: 0  auto;
 }
 
+.navbar{
+    display: flex;
+    justify-content:space-around;
+    margin: 15px 0px 
+
+}
 .header{
 
     &__container{
@@ -19,6 +25,7 @@
     }
      //.................... top ............................//
     &__top{
+        background: $background-second-base-color;
         .container{
             display: flex;
             justify-content: space-between;
@@ -60,5 +67,82 @@
             }
         }
     }
-   
+   //.................... search-bar ............................//
+    &__inputField {
+        width: 50%;
+        position: relative;
+      .button{
+        position: absolute;
+        top: 4px;
+        right: 5px;
+      }
+      input{
+        margin-left: 20px;
+      }
+      .searchIcon{
+        position: absolute;
+        top: 15px;
+        font-size: 1.4rem;
+        color:$base-text-color;
+        padding-left: 7px;
+      }
+     
+     
+    }
+//.................... logo ............................//
+
+    &__logo{
+       display: flex;
+       align-items: center;
+    }
+   //.................... user/cart ............................//
+   &__cart{
+    height: 100%;
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+     li{
+        font-size: 30px;
+        
+        &:hover{
+            background:$background-second-base-color;
+            border-radius: 50%;
+        }
+     }
+     .wishlist{
+        position:absolute;
+        left: 85px;
+        top: 5px;
+        border: 1px solid $base-text-color;
+        border-radius: 50%;
+        font-size: 13px;
+        height: 16px;
+        width: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $color;
+        color: $white-color;
+
+     }
+     .cart{
+        position:absolute;
+        right: 1px;
+        top: 6px;
+        border: 1px solid $base-text-color;
+        border-radius: 50%;
+        font-size: 13px;
+        height: 16px;
+        width: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $color;
+        color: $white-color;
+
+     }
+    }
+   }
 }

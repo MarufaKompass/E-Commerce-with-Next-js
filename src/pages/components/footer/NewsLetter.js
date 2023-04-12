@@ -8,7 +8,7 @@ export default function NewsLetter() {
         <h3>Sign up for Newsletter</h3>
         <Box className={styles.footer__inputField}>
         <input type="text" placeholder='email@example.com'></input>
-        <Button className={styles.btn_primary}>Subscribe</Button>
+        <Button className={styles.btn_primary_newsletter}>Subscribe</Button>
         </Box>
     </Box>
   )

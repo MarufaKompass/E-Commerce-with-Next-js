@@ -1,8 +1,10 @@
 //................... color .......................................//
-$color:#9b63d6;
+$color:#8a3cde;
+$dark-color:#7b1ae3;
 $base-text-color :#666;
 $heading-color:#313c46;
 $white-color:#fff;
+$background-second-base-color:#F8F8F8;
 //.................. black screen text color ...........................//
 
 $black-text-color:#cccccc;
@@ -17,3 +19,51 @@ $border-color:#bcb9b966;
 
 $footer-color:#222930;
 
+
+
+
+
+
+
+
+.btn_primary_newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: $color;
+    color: $white-color;
+    font-weight: 600;
+    cursor: pointer;
+    width:100%;
+    border-radius: 3px;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    height: 50px;
+    
+}
+.btn_primary_newsletter:hover{
+    background: $dark-color;
+}
+.btn_primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: $color;
+    color: $white-color;
+    font-weight: 600;
+    cursor: pointer;
+    width:100%;
+    border-radius: 3px;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    height: 48px;
+    
+}
+
+.btn_primary:hover{
+    background: $dark-color;
+}
